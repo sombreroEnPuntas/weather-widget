@@ -1,5 +1,8 @@
 # weather-widget
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/dec2c5d6c1aac26f5b24/maintainability)](https://codeclimate.com/github/sombreroEnPuntas/weather-widget/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/dec2c5d6c1aac26f5b24/test_coverage)](https://codeclimate.com/github/sombreroEnPuntas/weather-widget/test_coverage)
+
 Weather forecast widget.
 
 **NOTE: Requirements [here](assignment.pdf)**
@@ -25,3 +28,6 @@ There's an API service to provide forecast data: [openweathermap.org](https://op
 ## CI
 
 - `husky` enforces commit sanity locally
+- `codeclimate` static analysis prevents accumulating technical debt
+- pushing a commit triggers tests on github workflows
+- PRs get automated reviews: comments and checks from codeclimate 🤖
