@@ -2,8 +2,15 @@
 
 exports[`[Function Home] snapshot 1`] = `
 <div>
-  <div>
+  <h3>
     weather-widget
-  </div>
+  </h3>
+  <pre>
+    <a
+      href="https://github.com/sombreroEnPuntas/weather-widget"
+    >
+      Check the code on github!
+    </a>
+  </pre>
 </div>
 `;
