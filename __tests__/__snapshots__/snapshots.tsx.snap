@@ -13,9 +13,52 @@ exports[`data snapshot 1`] = `
     </a>
   </pre>
   <div
-    style="position: relative; background: rgb(38, 42, 89); color: rgb(255, 255, 255);"
+    class="wrapper"
   >
-    {"cityName":"Rivendell","list":[{"date":"2020-09-29","icon":"04n","temperature":13,"time":"11:00","weather":"Cloudy"},{"date":"2020-09-29","icon":"01d","temperature":12,"time":"12:00","weather":"Clear"}]}
+    <header
+      class="header"
+    >
+      <article
+        class="article"
+      >
+        Cloudy
+      </article>
+      <article
+        class="article"
+      >
+        Rivendell
+      </article>
+    </header>
+    <ul
+      class="hourlyDataList"
+    >
+      <li
+        class="hourlyData"
+      >
+        <div>
+          11:00
+        </div>
+        <div>
+          04n
+        </div>
+        <div>
+          13
+        </div>
+      </li>
+      <li
+        class="hourlyData"
+      >
+        <div>
+          12:00
+        </div>
+        <div>
+          01d
+        </div>
+        <div>
+          12
+        </div>
+      </li>
+    </ul>
   </div>
 </div>
 `;
@@ -33,7 +76,7 @@ exports[`error snapshot 1`] = `
     </a>
   </pre>
   <div
-    style="position: relative; background: rgb(38, 42, 89); color: rgb(255, 255, 255);"
+    class="wrapper"
   >
     418: The resulting entity body MAY be short and stout.
   </div>
@@ -53,7 +96,7 @@ exports[`loading snapshot 1`] = `
     </a>
   </pre>
   <div
-    style="position: relative; background: rgb(38, 42, 89); color: rgb(255, 255, 255);"
+    class="wrapper"
   >
     loading...
   </div>
