@@ -1,3 +1,5 @@
+import { openWeatherMockSuccess } from '../utils/mocks'
+
 const endpoint = 'https://samples.openweathermap.org/data/2.5/forecast'
 const defaultCity = 'M%C3%BCnchen,DE'
 
@@ -6,6 +8,7 @@ const formatData = (item) => ({
   icon: item.weather[0].icon,
   temperature: Math.round(parseInt(item.main.temp) - 273.15),
   time: item.dt_txt.split(' ')[1].slice(0, 5),
+  timestamp: item.dt,
   weather: item.weather[0].main,
 })
 
@@ -16,6 +19,7 @@ export interface HourlyData {
     icon: string
     temperature: number
     time: string
+    timestamp: number
     weather: string
   }[]
 }
@@ -33,7 +37,9 @@ const forecastByDate: () => Promise<ForecastByDateResponse> = async () => {
     const response = await fetch(
       `${endpoint}?q=${defaultCity}&appid=${process.env.OPEN_WEATHER_MAP_APP_ID}`
     )
+    // switch this for testing if API fails
     const result = await response.json()
+    // const result: any = { ...openWeatherMockSuccess }
 
     if (result.error || result.cod !== '200')
       throw new Error(result.error || `${result.cod}: ${result.message}`)

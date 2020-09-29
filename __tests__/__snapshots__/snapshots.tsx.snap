@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`data snapshot 1`] = `
+exports[`Side effect: data snapshot 1`] = `
 <div>
   <h3>
     weather-widget
@@ -21,49 +21,105 @@ exports[`data snapshot 1`] = `
       <article
         class="article"
       >
-        Cloudy
+        <img
+          alt="cloudy sky"
+          height="75"
+          src="/weather-cloud.svg"
+          width="75"
+        />
+        <div>
+          <div
+            class="articleHeading"
+          >
+            Cloudy
+              
+            13
+            ° /
+            12
+            °
+          </div>
+          <div
+            class="articleOverlineBig"
+            data-testid="articleOverlineBig"
+          >
+            13
+            °
+          </div>
+        </div>
       </article>
       <article
         class="article"
       >
-        Rivendell
+        <div>
+          <div
+            class="articleHeading"
+          >
+            Rivendell
+          </div>
+          <div
+            class="articleOverline"
+          >
+            <span
+              style="white-space: pre-line;"
+            >
+              Donnerstag
+ 16. Februar
+            </span>
+          </div>
+        </div>
       </article>
     </header>
     <ul
-      class="hourlyDataList"
+      class="hourlyData"
     >
       <li
-        class="hourlyData"
+        class="hourlyDataItem"
       >
-        <div>
-          11:00
-        </div>
-        <div>
-          04n
-        </div>
-        <div>
-          13
-        </div>
+        <button
+          data-testid="2020-09-29-11:00"
+        >
+          <div>
+            11:00
+          </div>
+          <img
+            alt="cloudy sky"
+            height="75"
+            src="/weather-cloud.svg"
+            width="75"
+          />
+          <div>
+            13
+            °
+          </div>
+        </button>
       </li>
       <li
-        class="hourlyData"
+        class="hourlyDataItem"
       >
-        <div>
-          12:00
-        </div>
-        <div>
-          01d
-        </div>
-        <div>
-          12
-        </div>
+        <button
+          data-testid="2020-09-29-12:00"
+        >
+          <div>
+            12:00
+          </div>
+          <img
+            alt="clear sky"
+            height="75"
+            src="/weather-sun.svg"
+            width="75"
+          />
+          <div>
+            12
+            °
+          </div>
+        </button>
       </li>
     </ul>
   </div>
 </div>
 `;
 
-exports[`error snapshot 1`] = `
+exports[`Side effect: error snapshot 1`] = `
 <div>
   <h3>
     weather-widget
@@ -83,7 +139,7 @@ exports[`error snapshot 1`] = `
 </div>
 `;
 
-exports[`loading snapshot 1`] = `
+exports[`Side effect: loading snapshot 1`] = `
 <div>
   <h3>
     weather-widget
