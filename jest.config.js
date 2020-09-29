@@ -7,6 +7,8 @@ module.exports = {
     // glue code should be ignored:
     '!pages/_app.tsx',
     '!pages/_document.tsx',
+    '!pages/api/forecast.ts',
+    '!src/components/Widget/useForecast.ts',
   ],
   setupFilesAfterEnv: ['<rootDir>/config/jest/setupTests.ts'],
   testPathIgnorePatterns: ['/node_modules/', '/.next/'],
