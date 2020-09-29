@@ -13,14 +13,16 @@ Weather forecast widget.
 
 This is a [Next.js](https://nextjs.org/) project.
 
+A local env file is required to access APIs. Create one with `cp .env .env.local` and add missing keys 🔐
+
 The following scripts are available:
 
-```js
-yarn lint   // run tsc, eslint & prettier code checks
-yarn test   // run tests (unit & integration)
-yarn dev    // starts dev server locally, with hot reload
-yarn build  // generate PRD bundle
-yarn start  // starts PRD server
+```sh
+yarn lint   # run tsc, eslint & prettier code checks
+yarn test   # run tests (unit & integration)
+yarn dev    # starts dev server locally, with hot reload
+yarn build  # generate PRD bundle
+yarn start  # starts PRD server
 ```
 
 ## Service

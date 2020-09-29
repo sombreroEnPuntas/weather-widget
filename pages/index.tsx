@@ -1,6 +1,8 @@
 import Link from 'next/link'
 
-const Home = () => (
+import Widget from '../src/components/Widget'
+
+const Index = () => (
   <>
     <h3>{'weather-widget'}</h3>
     <pre>
@@ -8,7 +10,9 @@ const Home = () => (
         {'Check the code on github!'}
       </Link>
     </pre>
+
+    <Widget />
   </>
 )
 
-export default Home
+export default Index

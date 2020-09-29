@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`[Function Home] snapshot 1`] = `
+exports[`data snapshot 1`] = `
 <div>
   <h3>
     weather-widget
@@ -12,5 +12,50 @@ exports[`[Function Home] snapshot 1`] = `
       Check the code on github!
     </a>
   </pre>
+  <div
+    style="position: relative; background: rgb(38, 42, 89); color: rgb(255, 255, 255);"
+  >
+    {"cityName":"Rivendell","list":[{"date":"2020-09-29","icon":"04n","temperature":13,"time":"11:00","weather":"Cloudy"},{"date":"2020-09-29","icon":"01d","temperature":12,"time":"12:00","weather":"Clear"}]}
+  </div>
+</div>
+`;
+
+exports[`error snapshot 1`] = `
+<div>
+  <h3>
+    weather-widget
+  </h3>
+  <pre>
+    <a
+      href="https://github.com/sombreroEnPuntas/weather-widget"
+    >
+      Check the code on github!
+    </a>
+  </pre>
+  <div
+    style="position: relative; background: rgb(38, 42, 89); color: rgb(255, 255, 255);"
+  >
+    418: The resulting entity body MAY be short and stout.
+  </div>
+</div>
+`;
+
+exports[`loading snapshot 1`] = `
+<div>
+  <h3>
+    weather-widget
+  </h3>
+  <pre>
+    <a
+      href="https://github.com/sombreroEnPuntas/weather-widget"
+    >
+      Check the code on github!
+    </a>
+  </pre>
+  <div
+    style="position: relative; background: rgb(38, 42, 89); color: rgb(255, 255, 255);"
+  >
+    loading...
+  </div>
 </div>
 `;

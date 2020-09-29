@@ -8,6 +8,8 @@ exclude_patterns:
   # glue code should be ignored:
   - 'pages/_app.tsx'
   - 'pages/_document.tsx'
+  - 'pages/api/forecast.ts'
+  - 'src/components/Widget/useForecast.ts'
 
 checks:
   method-lines:

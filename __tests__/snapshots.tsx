@@ -4,12 +4,32 @@ import React from 'react'
 // pages
 import Index from '../pages/index'
 
+// deps
+import useForecast from '../src/components/Widget/useForecast'
+
+// utils
+import {
+  forecastByDateFailureMock,
+  forecastByDateSuccessMock,
+} from '../src/utils/mocks'
+
+// Mocks
+jest.mock('../src/components/Widget/useForecast')
+
+// Mock data
+const setMock = ({ forecastData }) => {
+  ;(useForecast as jest.Mock).mockImplementation(() => forecastData)
+}
+
 describe.each`
-  Page
-  ${Index}
-`('$Page.displayName', ({ Page }) => {
+  Case         | forecastData
+  ${'error'}   | ${forecastByDateFailureMock}
+  ${'data'}    | ${forecastByDateSuccessMock}
+  ${'loading'} | ${{}}
+`('$Case', ({ forecastData }) => {
   test('snapshot', () => {
-    const { container } = render(<Page />)
+    setMock({ forecastData })
+    const { container } = render(<Index />)
 
     expect(container).toMatchSnapshot()
   })
