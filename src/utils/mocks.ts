@@ -12,6 +12,7 @@ export const forecastByDateSuccessMock = {
         icon: '04n',
         temperature: 13,
         time: '11:00',
+        timestamp: 1487246400,
         weather: 'Cloudy',
       },
       {
@@ -19,6 +20,7 @@ export const forecastByDateSuccessMock = {
         icon: '01d',
         temperature: 12,
         time: '12:00',
+        timestamp: 1487257200,
         weather: 'Clear',
       },
     ],

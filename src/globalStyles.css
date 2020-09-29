@@ -1,4 +1,11 @@
 :root {
   --color-ui-background-darker: #262a59;
   --color-typography-font-inverted: #ffffff;
+  --color-indigo-30: #a8aabd;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
 }
