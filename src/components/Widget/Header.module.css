@@ -1,24 +1,32 @@
 .header {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 1em;
+}
+@media screen and (min-width: 1430px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.image {
+  height: var(--image-size-l);
+  width: var(--image-size-l);
 }
 
 .article {
   display: flex;
   flex-direction: row;
-  flex: 1 0 40%;
   justify-content: space-evenly;
-  max-width: 250px;
 }
 
 .articleHeading {
   align-items: center;
   color: var(--color-indigo-30);
   display: flex;
-  font-size: 1em;
-  line-height: 1.2em;
+  font-size: var(--font-size-s);
   padding-bottom: 0.5em;
   white-space: pre;
 }
@@ -28,12 +36,11 @@
   align-items: center;
   display: flex;
   font-weight: bold;
-  line-height: 1em;
 }
 .articleOverline {
-  font-size: 1.5em;
+  font-size: var(--font-size-l);
 }
 .articleOverlineBig {
-  font-size: 3em;
+  font-size: var(--font-size-xl);
   justify-content: center;
 }

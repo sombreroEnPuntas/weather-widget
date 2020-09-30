@@ -23,18 +23,20 @@ exports[`Side effect: data snapshot 1`] = `
       >
         <img
           alt="cloudy sky"
-          height="75"
+          class="image"
+          height="100%"
           src="/weather-cloud.svg"
-          width="75"
+          width="100%"
         />
         <div>
           <div
             class="articleHeading"
           >
             Cloudy
-              
+               
             13
-            ° /
+            °
+             / 
             12
             °
           </div>
@@ -70,24 +72,30 @@ exports[`Side effect: data snapshot 1`] = `
       </article>
     </header>
     <ul
-      class="hourlyData"
+      class="hourlyData indiana-scroll-container indiana-scroll-container--hide-scrollbars"
     >
       <li
         class="hourlyDataItem"
       >
         <button
+          class="button"
           data-testid="2020-09-29-11:00"
         >
-          <div>
+          <div
+            class="title"
+          >
             11:00
           </div>
           <img
             alt="cloudy sky"
-            height="75"
+            class="image"
+            height="100%"
             src="/weather-cloud.svg"
-            width="75"
+            width="100%"
           />
-          <div>
+          <div
+            class="content"
+          >
             13
             °
           </div>
@@ -97,18 +105,24 @@ exports[`Side effect: data snapshot 1`] = `
         class="hourlyDataItem"
       >
         <button
+          class="button"
           data-testid="2020-09-29-12:00"
         >
-          <div>
+          <div
+            class="title"
+          >
             12:00
           </div>
           <img
             alt="clear sky"
-            height="75"
+            class="image"
+            height="100%"
             src="/weather-sun.svg"
-            width="75"
+            width="100%"
           />
-          <div>
+          <div
+            class="content"
+          >
             12
             °
           </div>

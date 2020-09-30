@@ -2,6 +2,28 @@
   --color-ui-background-darker: #262a59;
   --color-typography-font-inverted: #ffffff;
   --color-indigo-30: #a8aabd;
+  --color-indigo-70: #51557a;
+  --color-indigo-80: #3b3f69;
+
+  --font-size-s: 23.89px;
+  --font-size-m: 41.278px;
+  --font-size-l: 49.534px;
+  --font-size-xl: 114px;
+
+  --image-size-m: 60px;
+  --image-size-l: 164px;
+}
+
+@media screen and (min-width: 1430px) {
+  :root {
+    --font-size-s: 47.78px;
+    --font-size-m: 82.556px;
+    --font-size-l: 99.068px;
+    --font-size-xl: 246.512px;
+
+    --image-size-m: 120px;
+    --image-size-l: 328px;
+  }
 }
 
 body {

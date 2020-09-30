@@ -6,11 +6,16 @@ const weatherImages = {
   default: { alt: 'cloudy sky', src: '/weather-cloud.svg' },
 }
 interface Props {
-  size?: number
+  className?: string
   type: keyof typeof weatherImages
 }
-const WeatherImage = ({ size = 75, type }: Props) => (
-  <img width={size} height={size} {...weatherImages[type]} />
+const WeatherImage = ({ className, type }: Props) => (
+  <img
+    className={className}
+    height="100%"
+    width="100%"
+    {...weatherImages[type]}
+  />
 )
 
 export default WeatherImage
