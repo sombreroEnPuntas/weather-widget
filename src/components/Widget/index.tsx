@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
+import ScrollContainer from 'react-indiana-drag-scroll'
+
 import WeatherImage from '../WeatherImage'
 import Header from './Header'
-
 import useForecast from './useForecast'
 import styles from './Widget.module.css'
 
@@ -15,20 +16,24 @@ const Widget = () => {
         <>
           <Header current={current} data={data} />
 
-          <ul className={styles.hourlyData}>
+          <ScrollContainer className={styles.hourlyData} component="ul">
             {data.list.map(({ date, icon, temperature, time }, index) => (
               <li className={styles.hourlyDataItem} key={`${date}-${time}`}>
                 <button
-                  onClick={() => setCurrent(index)}
+                  className={styles.button}
                   data-testid={`${date}-${time}`}
+                  onClick={() => setCurrent(index)}
                 >
-                  <div>{time}</div>
-                  <WeatherImage type={icon === '01d' ? '01d' : 'default'} />
-                  <div>{temperature}°</div>
+                  <div className={styles.title}>{time}</div>
+                  <WeatherImage
+                    className={styles.image}
+                    type={icon === '01d' ? '01d' : 'default'}
+                  />
+                  <div className={styles.content}>{temperature}°</div>
                 </button>
               </li>
             ))}
-          </ul>
+          </ScrollContainer>
         </>
       ) : (
         error || 'loading...'

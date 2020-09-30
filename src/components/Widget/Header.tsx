@@ -17,14 +17,16 @@ const Header = ({ current, data }: Props) => (
   <header className={styles.header}>
     <article className={styles.article}>
       <WeatherImage
+        className={styles.image}
         type={data.list[current].icon === '01d' ? '01d' : 'default'}
       />
 
       <div>
         <div className={styles.articleHeading}>
           {data.list[current].weather}
-          {'  '}
-          {data.list.reduce(maxTemperatureReducer, data.list[0].temperature)}° /
+          {'   '}
+          {data.list.reduce(maxTemperatureReducer, data.list[0].temperature)}°
+          {' / '}
           {data.list.reduce(minTemperatureReducer, data.list[0].temperature)}°
         </div>
         <div
